@@ -1,0 +1,62 @@
+{
+  "Release-Unity-Web": {
+    "unity": {
+      "preExportMethod": "",
+      "postExportMethod": "",
+      "playerExporter": {
+        "export": true,
+        "playerExportTarget": "WebPlayer",
+        "buildOptions": [
+          "None"
+        ],
+        "sceneList": [
+
+        ]
+      },
+      "playerSettings": {
+      }
+    },
+    "platform": "web",
+    "appid": "com.patrickcurry.angrybots"
+  },
+  "ReleaseUnityWeb": {
+    "unity": {
+      "preExportMethod": "",
+      "postExportMethod": "",
+      "playerExporter": {
+        "export": true,
+        "playerExportTarget": "WebPlayer",
+        "buildOptions": [
+          "None"
+        ],
+        "sceneList": [
+
+        ]
+      },
+      "playerSettings": {
+      }
+    },
+    "platform": "web",
+    "appid": "com.patrickcurry.angrybots"
+  },
+  "ReleaseUnityiOS": {
+    "unity": {
+      "preExportMethod": "",
+      "postExportMethod": "",
+      "playerExporter": {
+        "export": true,
+        "playerExportTarget": "WebPlayer",
+        "buildOptions": [
+          "None"
+        ],
+        "sceneList": [
+
+        ]
+      },
+      "playerSettings": {
+      }
+    },
+    "platform": "web",
+    "appid": "com.patrickcurry.angrybots"
+  }
+}
