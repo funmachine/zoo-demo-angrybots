@@ -6,7 +6,7 @@ var onlyPlayOnce : boolean = true;
 
 private var playedOnce : boolean = false;
 
-function OnTriggerEnter () {
+function OnTriggerEnter (unusedArg) {
 	if (playedOnce && onlyPlayOnce)
 		return;
 	

@@ -66,6 +66,9 @@ function Update () {
 }
 
 function OnStartFire () {
+	if (Time.timeScale == 0)
+		return;
+	
 	firing = true;
 	
 	muzzleFlashFront.active = true;

@@ -81,6 +81,9 @@ function Awake () {
 }
 
 function OnStartFire () {
+	if (Time.timeScale == 0)
+		return;
+	
 	animationComponent[shootAdditive.name].enabled = true;
 }
 

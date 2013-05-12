@@ -113,7 +113,10 @@ function Update () {
 	if (Time.time > lastBlinkTime + deltaBlink) {
 		lastBlinkTime = Time.time;
 		proximityRenderer.material.color = Color.red;
-		audioSource.Play ();
+		if (audioSource.enabled)
+		{
+			audioSource.Play ();
+		}
 		for (var comp : SelfIlluminationBlink in blinkComponents) {
 			comp.Blink ();	
 		}

@@ -66,7 +66,7 @@ function Awake () {
 			joystickRightGO.name = "Joystick Right";
 			joystickRight = joystickRightGO.GetComponent.<Joystick> ();			
 		}
-	#else
+	#elif !UNITY_FLASH
 		if (cursorPrefab) {
 			cursorObject = (Instantiate (cursorPrefab) as GameObject).transform;
 		}
@@ -228,8 +228,10 @@ function HandleCursorAlignment (cursorWorldPosition : Vector3) {
 	// Set the position of the cursor object
 	cursorObject.position = cursorWorldPosition;
 	
-	// Hide mouse cursor when within screen area, since we're showing game cursor instead
-	Screen.showCursor = (Input.mousePosition.x < 0 || Input.mousePosition.x > Screen.width || Input.mousePosition.y < 0 || Input.mousePosition.y > Screen.height);
+	#if !UNITY_FLASH
+		// Hide mouse cursor when within screen area, since we're showing game cursor instead
+		Screen.showCursor = (Input.mousePosition.x < 0 || Input.mousePosition.x > Screen.width || Input.mousePosition.y < 0 || Input.mousePosition.y > Screen.height);
+	#endif
 	
 	
 	// HANDLE CURSOR ROTATION
