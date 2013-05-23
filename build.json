@@ -58,5 +58,74 @@
     },
     "platform": "web",
     "appid": "com.patrickcurry.angrybots"
+  },
+  "default-web": {
+    "unity": {
+      "preExportMethod": "",
+      "postExportMethod": "",
+      "playerExporter": {
+        "export": true,
+        "playerExportTarget": "WebPlayer",
+        "buildOptions": [
+          "None"
+        ],
+        "sceneList": [
+
+        ]
+      },
+      "playerSettings": {
+      }
+    },
+    "platform": "web",
+    "appid": "com.patrickcurry.angrybots"
+  },
+  "default-ios": {
+    "unity": {
+      "preExportMethod": "",
+      "postExportMethod": "",
+      "playerExporter": {
+        "export": true,
+        "playerExportTarget": "iPhone",
+        "buildOptions": [
+          "None"
+        ],
+        "sceneList": [
+
+        ]
+      },
+      "playerSettings": {
+      }
+    },
+    "xcode_ios": {
+      "bundleVersion": "",
+      "versionString": "",
+      "target": "",
+      "config": "",
+      "provisioningProfileGUID": "",
+      "signingIdentity": ""
+    },
+    "platform": "ios",
+    "appid": "com.patrickcurry.angrybots"
+  },
+  "default-android": {
+    "unity": {
+      "preExportMethod": "",
+      "postExportMethod": "",
+      "playerExporter": {
+        "export": true,
+        "playerExportTarget": "Android",
+        "buildOptions": [
+          "None"
+        ],
+        "sceneList": [
+
+        ]
+      },
+      "playerSettings": {
+				"bundleIdentifier":"com.patrickcurry.angrybots"
+      }
+    },
+    "platform": "android",
+    "appid": "com.patrickcurry.angrybots"
   }
 }
